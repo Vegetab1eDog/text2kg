@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from tqdm import tqdm
 
 # 初始化本地模型（需提前运行 ollama serve）
-model_name = "mistral:7b-instruct"
+model_name = "deepseek-r1:14b"
 
 # 定义系统提示词（关键）
 sys_prompt = """你是一个知识图谱提取专家，请从文本中提取以下内容：
