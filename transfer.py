@@ -23,7 +23,7 @@ text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=1000,
     chunk_overlap=200
 )
-with open("text.txt", "r", encoding="utf-8") as f:
+with open("./data/text.txt", "r", encoding="utf-8") as f:
     full_text = f.read()
 chunks = text_splitter.split_text(full_text)
 
