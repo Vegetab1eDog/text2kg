@@ -76,6 +76,8 @@ for _, row in merged_df.iterrows():
               weight=row["weight"])
 
 # 可视化展示
+plt.rcParams["font.sans-serif"]=["SimHei"] #设置字体
+plt.rcParams["axes.unicode_minus"]=False #该语句解决图像中的“-”负号的乱码问题
 plt.figure(figsize=(15, 10))
 pos = nx.spring_layout(G, k=0.5)
 nx.draw(G, pos, with_labels=True, node_size=2000, font_size=10,
